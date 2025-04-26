@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Digital Marketing Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="particles-container"></div>
+    
+    <header>
+        <div class="logo">
+            <span class="brand-name">AMPLIFY</span>
+            <span class="brand-dot"></span>
+            <span class="brand-tagline">DIGITAL</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact" class="cta-button">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>TRANSFORM<br>YOUR DIGITAL<br>PRESENCE</h1>
+            <p>Data-driven strategies that deliver measurable results</p>
+            
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h3><span class="counter" data-target="93">0</span>%</h3>
+                    <p>Conversion Increase</p>
+                </div>
+                <div class="stat-box">
+                    <h3><span class="counter" data-target="1.4">0</span>M+</h3>
+                    <p>Monthly Impressions</p>
+                </div>
+            </div>
+            
+            <a href="#contact" class="main-cta-button">GET STARTED</a>
+        </div>
+        <div class="dashboard-mockup">
+            <!-- SVG or image of the dashboard goes here -->
+        </div>
+    </section>
+    
+    <section id="services" class="services">
+        <div class="service-grid">
+            <!-- Service cards as shown in the design -->
+        </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

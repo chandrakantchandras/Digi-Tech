@@ -1,0 +1,43 @@
+:root {
+  --primary-dark: #111827;
+  --primary-gradient-start: #6C22BD;
+  --primary-gradient-end: #1A2980;
+  --accent-gradient-start: #FF9966;
+  --accent-gradient-end: #FF5E62;
+  --text-light: #FFFFFF;
+  --text-secondary: #B0B9D4;
+}
+
+body {
+  background-color: var(--primary-dark);
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-light);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(90deg, var(--primary-gradient-start), var(--primary-gradient-end));
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-button, .main-cta-button {
+  background: linear-gradient(90deg, var(--accent-gradient-start), var(--accent-gradient-end));
+  border-radius: 2rem;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover, .main-cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 94, 98, 0.3);
+}
+
+/* Add more styles for the other elements */

@@ -1,0 +1,38 @@
+// Animate counters
+const counters = document.querySelectorAll('.counter');
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+    const increment = target / 100;
+    
+    if (count < target) {
+      counter.innerText = (count + increment).toFixed(1);
+      setTimeout(updateCount, 10);
+    } else {
+      counter.innerText = target;
+    }
+  };
+  updateCount();
+});
+
+// Initialize particles
+particlesJS('particles-container', {
+  particles: {
+    number: { value: 80 },
+    color: { value: '#FF9966' },
+    opacity: { value: 0.7 },
+    size: { value: 2 },
+    move: { enable: true, speed: 1 }
+  }
+});
+
+// Scroll animations with GSAP
+gsap.from('.hero h1', { 
+  duration: 1, 
+  y: 50, 
+  opacity: 0, 
+  stagger: 0.2 
+});
+
+// Add more animations as needed
